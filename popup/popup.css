@@ -1,0 +1,72 @@
+:root {
+  --bg-color: #1c1c22;
+  --text-color: #fbfbfe;
+  --brand-color: #00ddff;
+  --btn-bg: #2b2a33;
+  --btn-hover: #52525e;
+  --btn-active: #005a6e;
+}
+
+body {
+  width: 250px;
+  margin: 0;
+  padding: 16px;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--brand-color);
+  text-align: center;
+}
+
+.status-box {
+  background-color: var(--btn-bg);
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+  font-size: 13px;
+  word-break: break-all;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  background-color: var(--btn-bg);
+  color: var(--text-color);
+  border: 1px solid #3a3944;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover);
+}
+
+.btn.active {
+  background-color: var(--btn-active);
+  border-color: var(--brand-color);
+  color: #ffffff;
+}

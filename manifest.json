@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Disable Zoom",
+    "version": "1.0",
+    "description": "Prevent manual zooming on specific domains or all pages.",
+    "permissions": [
+        "tabs",
+        "storage",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_title": "Disable Zoom Settings",
+        "default_icon": {
+            "48": "icons/icon-48.svg"
+        }
+    },
+    "icons": {
+        "48": "icons/icon-48.svg"
+    }
+}
